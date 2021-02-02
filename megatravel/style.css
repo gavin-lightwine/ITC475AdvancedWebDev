@@ -1,19 +1,26 @@
+/*resetting*/
+*
+{
+margin: 0;
+padding: 0;
+}
+
+
 /*Header Design with seperator*/
 header
 {
-  background-color: ##add8e6;
+  background-color: #add8e6;
+  border-bottom: 50px #d3d3d3;
+  position: auto;
   
-}
-
-Nav
-{
-  background-color: #d3d3d3;
 }
 
 
 
 /*Body design*/
-
+body {
+  background: #FFFFFF;
+  font-family:sans-serif;
 
 section {
  display: grid;
@@ -30,7 +37,7 @@ footer
   margin-top: 25px;
   text-align: left;
   padding: 8px;
-  color: white;
+  color: #FFFFFF;
 }
   
   
