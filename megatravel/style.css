@@ -4,20 +4,76 @@
 margin: 0px;
 padding: 0px;
 }
+body
+{
+  font-family: sans-serif;
+  margin: 0 auto;
+}
   header
 {
-  background:#adde6;
+  text-align: center;
+  background-color: #adde6;
   margin: 30px;
   
 }
-a { color : #000000;
+nav
+{
+ margin-top: 20px;
+  background: #000000
+}
+nav ul
+{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+nav a { 
+  color : #000000;
+  font-weight: bold;
+  display: block;
   text-decoration: none;
+  padding: 15px;
 }
 
-a:hover {
+nav a:hover {
   color: #ffa500;
-    text-decoration: none;
-  ;
+   
+}
+.intro{
+  margin: 30px 0;
+  padding: 0 10px;
+}
+.intro h1{
+  margin-bottom: 15px;
+}
+.intro p{
+  line-height: 1.5;
+}
+.cards{
+  margin-bottom: 30px;
+}
+.card{
+  border: 1px solid black;
+  padding: 15px;
+  margin: 10px;
+}
+@keyframes cards {
+  from{
+    background-color: #000000;
+    color: #FFFFFF;
+    border-width: 1px;
+    padding: 15px;
+  }
+  to{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-width: 5px;
+    padding: 11px;
+  }
+    
   
 h2 {
   font-size: 16px;
