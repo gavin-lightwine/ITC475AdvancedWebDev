@@ -1,9 +1,36 @@
+/*Header Design with seperator*/
+header
+{
+  background-color: ##add8e6;
+  
+}
+
+Nav
+{
+  background-color: #d3d3d3;
+}
+
+
+
+/*Body design*/
+
+
+section {
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+ 
+}
+
+
+}
+/*Footer*/
 footer 
 { 
   background: #000000;
   margin-top: 25px;
   text-align: left;
   padding: 8px;
+  color: white;
 }
   
   
