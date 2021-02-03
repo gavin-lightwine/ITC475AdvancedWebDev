@@ -17,6 +17,7 @@ body
 .bar{
   display:flex;
   background:lightgray;
+  padding: 10px;
 }
 nav
 {
