@@ -13,8 +13,10 @@ body
 {
   text-align: center;
   background-color: #adde6;
-  margin: 30px;
-  
+}
+.bar{
+  display:flex;
+  background:lightgray;
 }
 nav
 {
