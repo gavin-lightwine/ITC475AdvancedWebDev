@@ -12,7 +12,7 @@ body
   header
 {
   text-align: center;
-  background-color: #adde6;
+  background-color: #add8e6;
 }
 .bar{
   display:flex;
@@ -84,7 +84,7 @@ nav a:hover {
 
 .card a{
   color: black;
-  text decoration: none;
+  text-decoration: none;
   
 }
 
