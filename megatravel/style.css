@@ -63,7 +63,7 @@ nav a:hover {
   padding: 15px;
   margin: 10px;
 }
-@keyframes cards {
+@keyframes cardAnimation {
   from{
     background-color: white;
     color: black;
