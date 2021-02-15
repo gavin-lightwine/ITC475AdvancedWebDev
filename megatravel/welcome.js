@@ -11,4 +11,9 @@ if (hours < 12)
         welcome = "Good Morning";
 else if (hours >= 12 && hours <= 17)
         welcome = "Good Afternoon";
-else if (hours )
+else if (hours > 17 && hours < 24)
+        welcome = "Good Evening";
+
+// this is for the image
+
+if (hours  >= 6 && hours <= 18)
