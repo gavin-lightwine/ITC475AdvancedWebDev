@@ -1,1 +1,14 @@
-//java script function to create clock function
+//java script function to welcome message and picture clock function
+
+// getting the time 
+var myDate = new Date();
+var hours = myDate.getHours();
+var minutes = myDate.getMinutes();
+
+var welcome;
+// this is for the greeting of the day
+if (hours < 12)
+        welcome = "Good Morning";
+else if (hours >= 12 && hours <= 17)
+        welcome = "Good Afternoon";
+else if (hours )
