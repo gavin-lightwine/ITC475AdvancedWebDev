@@ -29,11 +29,18 @@ function Greeting() {
     //this is for the date and time portion
     function Time(){
         var myDate = new Date();
-        let hours = myDate.getHours();
-        let minutes = myDate.getMinutes();
-        let seconds = myDate.getSeconds();
+        var hours = myDate.getHours();
+        var minutes = myDate.getMinutes();
+        var seconds = myDate.getSeconds();
+        hour = udpateTime(hour);
+        minute = udpateTime(minute);
+        second = udpateTime(second);
+
+        document.getElementById("Date").innerText = d.toDateString() + " " + hour + ":" + min + ":" + sec;
+      let t = setTimeout(function(){ Time() }, 1000);
+}
     
-    }
+    
     
     // this is for the image
     function Icon() {
