@@ -52,7 +52,7 @@ if(nhour>=1 && nhour<12){greeting="Good Morning";}
 else if(nhour>=12 && nhour<=17){greeting="Good Afternoon";}
 else if(nhour>17){greeting="Good Evening";}
 
-var clocktext=""+nhour+":"+nmin+""+greeting+'';
+var clocktext=""+nhour+':'+nmin+'</b><br>'+greeting+'';
 document.getElementById('clockbox').innerHTML=clocktext;
 }
 
