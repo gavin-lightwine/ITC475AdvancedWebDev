@@ -4,6 +4,8 @@ function Greeting() {
     var myDate = new Date();
     var hours = myDate.getHours();
     var minutes = myDate.getMinutes();
+    var time = "0:00:00";
+    let timeOfDay = "TIme";
     
     
     var welcome;
@@ -18,11 +20,12 @@ function Greeting() {
             + welcome + '</b>' + 'The current date and time is';
             document.getElementById("time").innerHTML = d;
     
-            return (
-                React.createElement("h3", {id: "Welcome"}, greet, "! ", 
-                React.createElement("p", {id: "WelcomeTime"}),"The time is now " + hours + minutes));
+            
+                return (
+                    React.createElement("h3", {id: "Welcome"}, " Good ", timeOfDay, "! ", React.createElement("p", {id: "WelcomeTime"}), time));
+            }
+            
     
-    }
     //this is for the date and time portion
     function Time(){
         var myDate = new Date();
@@ -51,3 +54,5 @@ function Greeting() {
     }
     //updating the clock
     setInterval(Tick, 1000);
+
+    
