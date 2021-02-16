@@ -48,11 +48,11 @@ var nhour=d.getHours(),nmin=d.getMinutes();
 if(nmin<=9) nmin="0"+nmin
 
 var greeting="";
-if(nhour>=0 && nhour<12){greeting="Good Morning";}
+if(nhour>=1 && nhour<12){greeting="Good Morning";}
 else if(nhour>=12 && nhour<=17){greeting="Good Afternoon";}
 else if(nhour>17){greeting="Good Evening";}
 
-var clocktext=""+nhour+":"+nmin+""+'</b><br>'+greeting+'';
+var clocktext=""+nhour+":"+nmin+""+greeting+'';
 document.getElementById('clockbox').innerHTML=clocktext;
 }
 
