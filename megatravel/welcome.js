@@ -14,7 +14,7 @@ function Greeting() {
             welcome = "Good Afternoon";
     else if (hours > 17 && hours < 24)
             welcome = "Good Evening";
-            document.getElementById('Greeting').innerHTML = '<b>'
+            document.getElementById('greeting').innerHTML = '<b>'
             + welcome + '</b>' + 'The current date and time is';
             document.getElementById("time").innerHTML = d;
     
@@ -37,7 +37,7 @@ function Greeting() {
         var current = new Date();
         var hours = myDate.getHours();
         var dayandnight = current.getHours();
-    if  (hours  >= 6 && hours <= 18){
+    if  (dayandnight  >= 6 && hours <= 18){
         document.write("<img src = 'Images/sun.jpg'>")
     }
     else if (hours > 18 && hours < 6){
