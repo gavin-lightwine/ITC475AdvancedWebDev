@@ -13,11 +13,13 @@ else if (hours >= 12 && hours <= 17)
         welcome = "Good Afternoon";
 else if (hours > 17 && hours < 24)
         welcome = "Good Evening";
-
-
-
-
-
+}
+//this is for the date and time portion
+function Time(){
+    var myDate = new Date();
+    let hours = myDate.getHours();
+    let minutes = myDate.getMinutes();
+    let seconds = myDate.getSeconds();
 
 }
 // this is for the image
