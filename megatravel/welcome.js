@@ -37,13 +37,13 @@ function Greeting() {
         var current = new Date();
         var hours = myDate.getHours();
         var dayandnight = current.getHours();
-    if  (dayandnight  >= 6 && hours <= 18){
+    if  (dayandnight  >= 6 && hours <= 18)
         document.write("<img src = 'Images/sun.jpg'>")
-    }
-    else if (hours > 18 && hours < 6){
+    
+    else 
     
         document.write("img src = 'Images/moon.jpg.>");
-    }
+    
     }
     function Tick() {
         ReactDOM.render(React.createElement("div",null,React.createElement(Greeting, null)),
