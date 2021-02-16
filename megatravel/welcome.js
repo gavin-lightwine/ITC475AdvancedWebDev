@@ -42,7 +42,7 @@ function Greeting() {
     
     else 
     
-        document.write("img src = 'Images/moon.jpg.>");
+        document.write("img src = 'Images/moon.jpg'>");
     
     }
     function Tick() {
