@@ -28,13 +28,15 @@ body
 #WelcomeTime {
   float: right;
   font-size: 24px;
+  
 }
 
 #Welcome {
-  padding: 0px;
-  margin-top: 0px;
+  padding: 5px;
+  margin-top: 5px;
   padding-left: 10px;
   font-size: 24px;
+  color: black;
   float: left;
 }
 .bar{
