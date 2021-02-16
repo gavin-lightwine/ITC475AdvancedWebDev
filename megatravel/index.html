@@ -28,11 +28,12 @@
      var hours = myDate.getHours();
      var welcome;
      var current = new Date();
-     var dayandnight=current.getHours();
+     var dayandnight = current.getHours();
      var d = new Date();
 
    //display sun or moon//
-      if (dayandnight<=12)
+     // if (dayandnight<=12)
+     if (dayandnight  >= 6 && dayandnight <= 18)
      document.write("<img src='Images/sun.jpg'>")
      else
      document.write("<img src='Images/moon.jpg'>")
