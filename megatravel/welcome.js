@@ -35,6 +35,7 @@ function Greeting() {
     // this is for the image
     function Icon() {
         var current = new Date();
+        var hours = myDate.getHours();
         var dayandnight = current.getHours();
     if  (hours  >= 6 && hours <= 18){
         document.write("<img src = 'Images/sun.jpg'>")

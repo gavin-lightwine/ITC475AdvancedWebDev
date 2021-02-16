@@ -22,7 +22,37 @@
       </ul>
      </nav>
      <script src="welcome.js"></script>
-   
+     <div id="WelcomeBar"></div>
+     <script>
+     var myDate = new Date();
+     var hrs = myDate.getHours();
+     var greet;
+     var current = new Date();
+     var dayandnight=current.getHours();
+     var d = new Date();
+
+   //display sun or moon//
+      if (day_night<=12)
+     document.write("<img src='sun.jpg'>")
+     else
+     document.write("<img src='moon.jpg'>")
+     
+   //Display the current date and time//
+     document.getElementById("time").innerHTML = d;
+
+    
+
+   //display a greeting message//
+     if (hrs < 12)
+       greet = 'Good Morning';
+     else if (hrs >= 12 && hrs <= 17)
+       greet = 'Good Afternoon';
+      else if (hrs >= 17 && hrs <= 24)
+      greet = 'Good Evening';
+     document.getElementById('greeting').innerHTML =
+ '<b>' + greet + '</b>' + ' the current date and time is ';
+     
+   </script>
     </section>
     <section class="intro">
       <h1>Travel Packages</h1>
