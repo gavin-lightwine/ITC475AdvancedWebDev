@@ -39,22 +39,7 @@
      document.write("<img src='Images/moon.jpg'>")
         </script>
 
-<div id="clockbox"></div>
 
-<script type="text/javascript">
-function GetClock(){
-var d=new Date();
-var nhour=d.getHours(),nmin=d.getMinutes();
-if(nmin<=9) nmin="0"+nmin
-
-var greeting="";
-if(nhour>=1 && nhour<12){greeting="Good Morning";}
-else if(nhour>=12 && nhour<=17){greeting="Good Afternoon";}
-else if(nhour>17){greeting="Good Evening";}
-
-var clocktext=""+nhour+':'+nmin+'</b><br>'+greeting+'';
-document.getElementById('clockbox').innerHTML=clocktext;
-}
 
 GetClock();
 setInterval(GetClock,1000);
