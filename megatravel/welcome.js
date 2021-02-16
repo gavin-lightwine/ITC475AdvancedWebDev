@@ -36,7 +36,7 @@ function Greeting() {
         minute = udpateTime(minute);
         second = udpateTime(second);
 
-        document.getElementById("Date").innerText = d.toDateString() + " " + hour + ":" + min + ":" + sec;
+        document.getElementById("Date").innerText = d.toDateString() + " " + hour + ":" + min;
       let t = setTimeout(function(){ Time() }, 1000);
 }
     
