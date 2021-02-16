@@ -28,6 +28,8 @@ body
 #WelcomeTime {
   float: right;
   font-size: 24px;
+  font-style: normal;
+  font-display: black;
   
 }
 

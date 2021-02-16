@@ -36,7 +36,7 @@ function Time(){
 function Icon() {
     var current = new Date();
     var dayandnight = current.getHours();
-if (hours  >= 6 && hours <= 18) {
+if  (hours  >= 6 && hours <= 18){
     document.write("<img src = 'Images/sun.jpg'>")
 }
 else if (hours > 18 && hours < 6){
