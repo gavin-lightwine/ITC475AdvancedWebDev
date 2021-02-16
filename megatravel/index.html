@@ -25,14 +25,14 @@
      <div id="WelcomeBar"></div>
             <script>
             var myDate = new Date();
-            var hours = myDate.getHours();
+            var hrs = myDate.getHours();
             var greet;
             var current = new Date();
-            var dayandnight=current.getHours();
+            var day_night=current.getHours();
             var d = new Date();
 
           //display sun or moon//
-             if (dayandnighthours  >= 6 && hours <= 18)
+             if (day_night<=12)
             document.write("<img src='Images/sun.jpg'>")
             else
             document.write("<img src='Images/moon.jpg'>")
@@ -49,8 +49,9 @@
               greet = 'Good Afternoon';
              else if (hrs >= 17 && hrs <= 24)
              greet = 'Good Evening';
-            document.getElementById('Greeting').innerHTML =
+            document.getElementById('greeting').innerHTML =
         '<b>' + greet + '</b>' + ' the current date and time is ';
+            
             </script>
     </section>
     <section class="intro">
