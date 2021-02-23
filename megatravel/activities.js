@@ -280,7 +280,7 @@ class Activities extends React.Component{
 }
 
 ReactDOM.render(
-    React.createElement("form", {id: 'ContactForm', method: 'post', action:''},
+    React.createElement("form", {id: 'contact', method: 'post', action:''},
        React.createElement('h3', null, "Destination"),
        react.createElement(Activities, null),
         ),
