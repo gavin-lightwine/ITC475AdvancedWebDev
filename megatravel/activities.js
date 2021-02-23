@@ -262,11 +262,27 @@ class Activities extends React.Component{
 
             React.createElement("option", {value: ""}, "Choose a Destination"),
             React.createElement("option", {vlaue: "Maldives"}, "Maldives, South Asia"),
-            
+            React.createElement("option", {vlaue: "New Zealand"}, "New Zealand"),
+            React.createElement("option", {vlaue: "Venice"}, "Venice, Italy"),
+            React.createElement("option", {vlaue: "Cancun"}, "Cancun, Mexico")),
 
-            ))
-        )
+            React.createElement("br", null),
+
+            this.activityList(),
+
+
+
+            )
+        );
         
     }
 
 }
+
+ReactDOM.render(
+    React.createElement("form", {id: 'ContactForm', method: 'post', action:''},
+       React.createElement('h3', null, "Destination"),
+       react.createElement(Activities, null),
+        ),
+        document.getElementById('activities')
+);
