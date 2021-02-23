@@ -32,6 +32,10 @@ body
 #WelcomeTime img {
 	height: 24px;
 }
+#activities {
+  padding-left:1.5em;
+  display: block;
+}
   header
 {
   text-align: center;
