@@ -284,5 +284,5 @@ ReactDOM.render(
        React.createElement('h3', null, "Destination"),
        react.createElement(Activities, null),
         ),
-        document.getElementById('activities')
+        document.getElementById('Activities')
 );
