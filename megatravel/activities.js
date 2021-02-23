@@ -87,7 +87,7 @@ class Activities extends React.Component{
                     "Boating",
 
                     
-                    ));
+                    ))
 
                     break;
 
@@ -97,41 +97,41 @@ class Activities extends React.Component{
                             React.createElement("label", null,
                             React.createElement("input", {
                                 type: "checkbox",
-                                name: "museums",
+                                name: "cityTours",
                                 onChange: this.handleChange,
-                                checked: this.state.museums
+                                checked: this.state.cityTours
                             }),
-                            "Museums",
+                            "City Tours",
                             
                             React.createElement("br", null),
         
                             React.createElement("input", {
                                 type: "checkbox",
-                                name: "sailing",
+                                name: "sports",
                                 onChange: this.handleChange,
-                                checked: this.state.sailing
+                                checked: this.state.sports
                             }),
-                            "Sailing",
+                            "Sports",
         
                             React.createElement("br", null),
         
                             React.createElement("input", {
                                 type: "checkbox",
-                                name: "beach",
+                                name: "cycling",
                                 onChange: this.handleChange,
-                                checked: this.state.beach
+                                checked: this.state.cycling
                             }),
-                            "Beach",
+                            "Cycling",
         
                             React.createElement("br", null),
         
                             React.createElement("input", {
                                 type: "checkbox",
-                                name: "hiking",
+                                name: "museums",
                                 onChange: this.handleChange,
-                                checked: this.state.hiking
+                                checked: this.state.museums
                             }),
-                            "Hiking",
+                            "Museums",
         
                             React.createElement("br", null),
         
@@ -144,9 +144,129 @@ class Activities extends React.Component{
                             "Boating",
         
                             
-                            ));
+                            ))
+
+                            break;
+
+                            case 'Venice':
+                                return(
+                                    React.createElement("label", null,
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "museums",
+                                        onChange: this.handleChange,
+                                        checked: this.state.museums
+                                    }),
+                                    "Museums",
+                                    
+                                    React.createElement("br", null),
+                
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "theatre",
+                                        onChange: this.handleChange,
+                                        checked: this.state.theatre
+                                    }),
+                                    "Theatre",
+                
+                                    React.createElement("br", null),
+                
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "parksAndRecreation",
+                                        onChange: this.handleChange,
+                                        checked: this.state.parksAndRecreation
+                                    }),
+                                    "Parks and Recreation",
+                
+                                    React.createElement("br", null),
+                
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "cityTours",
+                                        onChange: this.handleChange,
+                                        checked: this.state.cityTours
+                                    }),
+                                    "City Tours",
+                
+                
+                                    
+                                    ))
+
+                                    break;
+
+
+                                    case 'Cancun':
+                                return(
+                                    React.createElement("label", null,
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "parksAndRecreation",
+                                        onChange: this.handleChange,
+                                        checked: this.state.parksAndRecreation
+                                    }),
+                                    "Parks and Recreation",
+                                    
+                                    React.createElement("br", null),
+                
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "beach",
+                                        onChange: this.handleChange,
+                                        checked: this.state.beach
+                                    }),
+                                    "Beaches",
+                
+                                    React.createElement("br", null),
+                
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "boating",
+                                        onChange: this.handleChange,
+                                        checked: this.state.boating
+                                    }),
+                                    "Boating",
+                
+                                    React.createElement("br", null),
+                
+                                    React.createElement("input", {
+                                        type: "checkbox",
+                                        name: "snorkeling",
+                                        onChange: this.handleChange,
+                                        checked: this.state.snorkeling
+                                    }),
+                                    "Snorkeling",
+                                    
+                                    
+                                    
+                                    ))
+
+                                    break;
+
+                                    default:
+
+
               
         }
+    }
+
+    render(){
+        return(
+            React.createElement("main", null,
+            React.createElement("select",{
+            value: this.state.destination,
+                name: "destination",
+                onChange: this.handleChange,
+                required: true
+            },
+
+            React.createElement("option", {value: ""}, "Choose a Destination"),
+            React.createElement("option", {vlaue: "Maldives"}, "Maldives, South Asia"),
+            
+
+            ))
+        )
+        
     }
 
 }
