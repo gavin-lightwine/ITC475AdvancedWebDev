@@ -235,11 +235,8 @@ class Activities extends React.Component{
                                         onChange: this.handleChange,
                                         checked: this.state.snorkeling
                                     }),
-                                    "Snorkeling",
-                                    
-                                    
-                                    
-                                    ))
+                                    "Snorkeling")
+                                )
 
                                     break;
 
