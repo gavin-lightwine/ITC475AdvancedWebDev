@@ -28,12 +28,12 @@ function validateForm() {
     }
     var c = document.forms["form1"]["noOfChild"].value;
     if (c ==null ||c == "") {
-      alert("Number of Adults must be filled out");
+      alert("Number of Children must be filled out");
       return false;
     }
     var d = document.forms["form1"]["travelDates"].value;
     if (d ==null ||d == "") {
-      alert("Number of Adults must be filled out");
+      alert("Travel Dates must be filled out");
       return false;
     }
 }
