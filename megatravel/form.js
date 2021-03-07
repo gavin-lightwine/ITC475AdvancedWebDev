@@ -11,4 +11,9 @@ function validateForm() {
       alert("Last Name must be filled out");
       return false;
     }
+    var z = document.forms["form1"]["phoneNo"].value;
+    if (z ==null ||z == "") {
+      alert("Last Name must be filled out");
+      return false;
+    }
 }
