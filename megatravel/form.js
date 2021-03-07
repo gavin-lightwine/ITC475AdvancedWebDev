@@ -4,4 +4,6 @@ function validate() {
         alert("Please provide your First Name!");
         document.form1.focus();
         return false;
-    }}
+    }
+    return(true)
+}
