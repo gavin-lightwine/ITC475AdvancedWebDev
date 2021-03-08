@@ -182,57 +182,6 @@
 </footer>
 <script src="activities.js"></script>
 <script src="form.js"></script>
-<script type="text/javascript">
-  function myfunct(){
-  var docHeight = (document.height !== undefined) ? document.height : document.body.offsetHeight;
-  var cur_height=window.innerHeight;
-  var total_height=docHeight-cur_height;
-  alert(total_height/100);
-  //var amout=total_height/100;
-  }
-  var NewZealand = ["City Tours","Sports","Cycling","Museums","Boating"];
-  var Maldives = ["Sailing","Beach","Hiking","Museums","Boating"];
-  var Venice = ["Museums", "Theatre", "Parks and Recreation", "City Tours"];
-  var Cancun = ["Parks and Recreation", "Beaches", "Boating", "Snorkeling"];
-  
-  function changeActivities(){
-  var city=document.getElementById('city').value;
-  $('#Activities')
-  .find('option')
-  .remove()
-  .end()
-  .append('<option value="none" disabled selected>Select</option>')
-  .val('none')
-  ;
-  if(city=="NewZealand"){
-  for(i=0;i<NewZealand.length;i++){
-  var o = new Option(NewZealand[i], NewZealand[i]);
-  $(o).html(NewZealand[i]);
-  $("#Activities").append(o);
-  }
-  }
-  else if(city=="Maldives"){
-  for(i=0;i<Maldives.length;i++){
-  var o = new Option(Maldives[i], Maldives[i]);
-  $(o).html(Maldives[i]);
-  $("#Activities").append(o);
-  }
-  }else if(city=="Venice"){
-  for(i=0;i<Venice.length;i++){
-  var o = new Option(Venice[i], Venice[i]);
-  $(o).html(Venice[i]);
-  $("#Activities").append(o);
-  }
-  
-  }else if(city=="Cancun"){
-  for(i=0;i<Cancun.length;i++){
-  var o = new Option(Cancun[i], Cancun[i]);
-  $(o).html(Cancun[i]);
-  $("#Activities").append(o);
-  }
-  }
-  }
-  </script>
   </body>
  
 </html>
