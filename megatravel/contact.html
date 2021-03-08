@@ -152,7 +152,63 @@
 <option value="Cancun">Cancun</option>
 </select>
 </div>
-
+<script type="text/javascript">
+  function myfunct(){
+  var docHeight = (document.height !== undefined) ? document.height : document.body.offsetHeight;
+  var cur_height=window.innerHeight;
+  var total_height=docHeight-cur_height;
+  alert(total_height/100);
+  //var amout=total_height/100;
+  }
+  var Brisbane = ["City Tours","Sports","Cycling","Museums","Boating"];
+  var Vancouver = ["Sailing","Beach","Hiking","Museums","Boating"];
+  var New_York_City = ["Museums", "Theatre", "Parks and Recreation", "City Tours"];
+  var Berlin = ["City Tours", "Museums", "Cycling"];
+  var Cancun = ["Parks and Recreation", "Beaches", "Boating", "Snorkeling"];
+  
+  function changeActivities(){
+  var city=document.getElementById('city').value;
+  $('#activity')
+  .find('option')
+  .remove()
+  .end()
+  .append('<option value="none" disabled selected>Select</option>')
+  .val('none')
+  ;
+  if(city=="Brisbane"){
+  for(i=0;i<Brisbane.length;i++){
+  var o = new Option(Brisbane[i], Brisbane[i]);
+  $(o).html(Brisbane[i]);
+  $("#activity").append(o);
+  }
+  }
+  else if(city=="Vancouver"){
+  for(i=0;i<Vancouver.length;i++){
+  var o = new Option(Vancouver[i], Vancouver[i]);
+  $(o).html(Vancouver[i]);
+  $("#activity").append(o);
+  }
+  }else if(city=="New_York_City"){
+  for(i=0;i<New_York_City.length;i++){
+  var o = new Option(New_York_City[i], New_York_City[i]);
+  $(o).html(New_York_City[i]);
+  $("#activity").append(o);
+  }
+  }else if(city=="Berlin"){
+  for(i=0;i<Berlin.length;i++){
+  var o = new Option(Berlin[i], Berlin[i]);
+  $(o).html(Berlin[i]);
+  $("#activity").append(o);
+  }
+  }else if(city=="Cancun"){
+  for(i=0;i<Cancun.length;i++){
+  var o = new Option(Cancun[i], Cancun[i]);
+  $(o).html(Cancun[i]);
+  $("#activity").append(o);
+  }
+  }
+  }
+  </script>
 <div class="form-group">
 <label for="activity">Select Activity:</label>
 <select name="activity" id="activity" class="form-control">
