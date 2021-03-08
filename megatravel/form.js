@@ -26,7 +26,7 @@ function validateForm() {
       alert("Number of Adults must be filled out");
       return false;
     }
-    var c = document.forms["form1"]["noOfChild"].value;
+    var c = document.forms["form1"]["noOfChildren"].value;
     if (c ==null ||c == "") {
       alert("Number of Children must be filled out");
       return false;
