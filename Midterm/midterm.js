@@ -1,8 +1,5 @@
 function currentTime() {
-    var rtClock = new Date();
-    var hours = rtClock.getHours();
-    var minutes = rtClock.getMinutes();
-    var seconds = rtClock.getSeconds();
+    var d = new Date();
 
 
     document.getElementById('clock').innerHTML = 
