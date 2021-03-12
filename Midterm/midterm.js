@@ -9,7 +9,7 @@ function currentTime() {
     hours + " : " + minutes + " : " + seconds + " ";
     var t = setTimeout(currentTime, 500);
 }
-function getTIme() {
+function saveTimes() {
 
     var d = new Date();
     var h = d.getHours();
