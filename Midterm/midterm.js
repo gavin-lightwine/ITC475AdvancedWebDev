@@ -20,8 +20,13 @@ function saveTimes() {
     document.getElementById("time").innerHTML= h + ":" + m;
     var d = setTimeout(currentTime, 1000) 
 
-    document.getElementById('GarageDoorStart').value = time();
-    document.getElementById('GarageDoorEnd').value = time();
+   document.getElementById("GarageDoorStart").value =  garagestarttime();
+   
+
+
+    
+    document.getElementById("GarageDoorEnd").value;
+    
     document.getElementById('LivingRoomLampStart').value = time();
     document.getElementById('LivingRoomLampEnd').value = time();
     document.getElementById('FrontDoorStart').value = time();
@@ -46,6 +51,14 @@ function saveTimes() {
     document.getElementById('BedroomFloorLampEnd').value = time();
 
 }
+
+function sign (garagestarttime, garageendtime)
+
+if(currentTime > garagestarttime && currentTime < garageendtime)
+{}
+
+
+
 
 
 
