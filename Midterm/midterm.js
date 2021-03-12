@@ -7,7 +7,7 @@ function currentTime() {
 
     document.getElementById('clock').innerHTML = 
     hours + " : " + minutes + " : " + seconds + " ";
-    var t = setTimeout(currentTime, 500);
+    var t = setTimeout(currentTime, 1000);
 }
 function saveTimes() {
 
