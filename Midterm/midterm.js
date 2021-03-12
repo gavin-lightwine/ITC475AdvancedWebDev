@@ -45,7 +45,7 @@ function saveTimes() {
     document.getElementById('BedroomFloorLampStart').value = time();
     document.getElementById('BedroomFloorLampEnd').value = time();
 
-
+}
 
 
 
@@ -70,4 +70,4 @@ function saveTimes() {
 
 
 
-}
+
