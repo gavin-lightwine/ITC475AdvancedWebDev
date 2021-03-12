@@ -20,35 +20,36 @@ function saveTimes() {
     document.getElementById("time").innerHTML= h + ":" + m;
     var d = setTimeout(currentTime, 1000) 
 
-   document.getElementById("GarageDoorStart").value =  garagestarttime();
+    var garageStart =document.getElementById("GarageDoorStart").value;
    
 
 
     
-    document.getElementById("GarageDoorEnd").value;
+    var garageEnd = document.getElementById("GarageDoorEnd").value;
     
-    document.getElementById('LivingRoomLampStart').value = time();
-    document.getElementById('LivingRoomLampEnd').value = time();
-    document.getElementById('FrontDoorStart').value = time();
-    document.getElementById('FrontDoorEnd').value = time();
-    document.getElementById('BackDoorStart').value = time();
-    document.getElementById('BackDoorEnd').value = time();
-    document.getElementById('GarageDoorStart').value = time();
-    document.getElementById('DiningRoomLightStart').value = time();
-    document.getElementById('DiningRoomLightEnd').value = time();
-    document.getElementById('BathroomFanStart').value = time();
-    document.getElementById('BathroomFanEnd').value = time();
-    document.getElementById('KitchenFanStart').value = time();
-    document.getElementById('KitchenFanEnd').value = time();
-    document.getElementById('WasherStart').value = time();
-    document.getElementById('WasherEnd').value = time();
-    document.getElementById('DryerStart').value = time();
-    document.getElementById('DryerEnd').value = time();
-    document.getElementById('GarageDoorStart').value = time();
-    document.getElementById('BedroomDeskLampStart').value = time();
-    document.getElementById('BedroomDeskLampEnd').value = time();
-    document.getElementById('BedroomFloorLampStart').value = time();
-    document.getElementById('BedroomFloorLampEnd').value = time();
+    var livingLampStart = document.getElementById('LivingRoomLampStart').value;
+     var livingLampEnd = document.getElementById('LivingRoomLampEnd').value;
+   var frontDoorStart = document.getElementById('FrontDoorStart').value;
+    var frontDoorEnd = document.getElementById('FrontDoorEnd').value;
+    var backDoorStart = document.getElementById('BackDoorStart').value;
+     var backDoorEnd = document.getElementById('BackDoorEnd').value;
+     var garageStart = document.getElementById('GarageDoorStart').value;
+     var garageEnd = document.getElementById('GarageDoorEnd').value;
+     var diningLightStart = document.getElementById('DiningRoomLightStart').value;
+    var diningLightEnd = document.getElementById('DiningRoomLightEnd').value;
+    var  bathroomFanStart = document.getElementById('BathroomFanStart').value;
+    var BathroomFanEnd = document.getElementById('BathroomFanEnd').value;
+    var kitchenFanStart = document.getElementById('KitchenFanStart').value;
+   var kitchenFanEnd =  document.getElementById('KitchenFanEnd').value;
+   var  washerStart =  document.getElementById('WasherStart').value;
+   var washerEnd =  document.getElementById('WasherEnd').value;
+    var dryerStart = document.getElementById('DryerStart').value;
+   var dryerEnd =  document.getElementById('DryerEnd').value;
+    
+    var bedroomDeskStart = document.getElementById('BedroomDeskLampStart').value;
+    var bedroomDeskEnd = document.getElementById('BedroomDeskLampEnd').value;
+     var bedroomFloorStart = document.getElementById('BedroomFloorLampStart').value;
+   var bedroomFloorEnd =  document.getElementById('BedroomFloorLampEnd').value;
 
 }
 
