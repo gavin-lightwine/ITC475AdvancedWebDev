@@ -18,3 +18,19 @@
         margin: 0;
         width: 100
     }
+    footer{
+        list-style: none;
+        background: black;
+        padding: 10px 50px;
+        
+      }
+      footer p{
+      color: white;
+      }
+       @media (min-width: 768px){
+       header{
+         display: flex;
+         align-items: center;
+         
+      }
+    }
