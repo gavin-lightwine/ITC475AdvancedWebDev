@@ -22,7 +22,9 @@
        <li><a href= "contact.html">Contact Agent</a></li>
       </ul>
      </nav>
-
+     <?php
+echo "My first PHP script!";
+?>
 
 
 <footer>
