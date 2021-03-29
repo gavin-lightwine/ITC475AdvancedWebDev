@@ -36,5 +36,5 @@ function validateForm() {
       alert("Travel Dates must be filled out");
       return false;
     }
-}
+  }
 
