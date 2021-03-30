@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+echo "My first PHP script!";
+?>
+
+
 <html>
  <head>
   <meta name:"viewport" content="width=device-width, initial-scale=1"/>
@@ -22,11 +27,7 @@
        <li><a href= "contact.html">Contact Agent</a></li>
       </ul>
      </nav>
-     <?php
-echo "My first PHP script!";
-?>
-
-
+   
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
    <p>MEGA TRAVELS</p>
