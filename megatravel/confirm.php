@@ -28,8 +28,8 @@
      <?php
 echo "Thank you for submitting your travel agent contact request! Here is the information you submitted:<br>";
 ?>
-First Name: <?php echo $_GET["FirstName"]; ?><br>
-Last Name:  <?php echo $_GET["LastName"]; ?><br>
+First Name: <?php echo $_POST["FirstName"]; ?><br>
+Last Name:  <?php echo $_POST["LastName"]; ?><br>
    
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
