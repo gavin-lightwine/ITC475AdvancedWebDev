@@ -38,7 +38,7 @@ Travel Dates:<?php echo $_POST["travelDates"];?><br>
    
 
 <?php
-echo "Thank you for submitting your travel agent contact request! Here is the information you submitted:<br>";
+echo "An agent will be in touch with you soon!";
 ?>
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
