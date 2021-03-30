@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<?php
-echo "My first PHP script!";
-?>
+
 
 
 <html>
@@ -27,6 +25,9 @@ echo "My first PHP script!";
        <li><a href= "contact.html">Contact Agent</a></li>
       </ul>
      </nav>
+     <?php
+echo "My first PHP script!";
+?>
    
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
