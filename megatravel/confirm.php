@@ -30,11 +30,11 @@ echo "Thank you for submitting your travel agent contact request! Here is the in
 ?>
 First Name: <?php echo $_POST["FirstName"]; ?><br>
 Last Name:  <?php echo $_POST["LastName"]; ?><br>
-Phone Number: <?php echo $_POST["PhoneNo"]; ?><br>
+Phone Number: <?php echo $_POST["phoneNo"]; ?><br>
 Email: <?php echo $_POST["email"]; ?><br>
 Number of Adults: <?php echo $_POST["noOfAdults"]; ?><br>
 Number of Children: <?php echo $_POST["noOfChildren"]; ?><br>
-Travel Dates:<?php echo $_POST["date"];?><br>
+Travel Dates:<?php echo $_POST["travelDates"];?><br>
    
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
