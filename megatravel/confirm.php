@@ -26,7 +26,7 @@
       </ul>
      </nav>
      <?php
-echo "My first PHP script!";
+echo "Thank you for submitting your travel agent contact request! Here is the information you submitted:";
 ?>
    
 <footer>
