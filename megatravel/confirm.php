@@ -25,9 +25,7 @@
        <li><a href= "contact.html">Contact Agent</a></li>
       </ul>
      </nav>
-     <?php
-echo "Thank you for submitting your travel agent contact request! Here is the information you submitted:<br>";
-?>
+<h1>Thank you for submitting your travel agent contact request! Here is the information you submitted:</h1>
 First Name: <?php echo $_POST["FirstName"]; ?><br>
 Last Name:  <?php echo $_POST["LastName"]; ?><br>
 Phone Number: <?php echo $_POST["phoneNo"]; ?><br>
