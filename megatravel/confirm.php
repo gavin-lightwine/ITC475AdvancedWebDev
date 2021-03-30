@@ -40,9 +40,9 @@ Destination:<?php echo $_POST["destination"];?><br>
 echo $destination;
 ?>
 
-<?php
-echo "An agent will be in touch with you soon!";
-?>
+<h1>An agent will be in touch with you soon!</h1>
+
+
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
    <p>MEGA TRAVELS</p>
