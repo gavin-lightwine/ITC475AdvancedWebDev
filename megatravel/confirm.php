@@ -36,6 +36,10 @@ Number of Adults: <?php echo $_POST["noOfAdults"]; ?><br>
 Number of Children: <?php echo $_POST["noOfChildren"]; ?><br>
 Travel Dates:<?php echo $_POST["travelDates"];?><br>
    
+
+<?php
+echo "Thank you for submitting your travel agent contact request! Here is the information you submitted:<br>";
+?>
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
    <p>MEGA TRAVELS</p>
