@@ -35,7 +35,9 @@ Email: <?php echo $_POST["email"]; ?><br>
 Number of Adults: <?php echo $_POST["noOfAdults"]; ?><br>
 Number of Children: <?php echo $_POST["noOfChildren"]; ?><br>
 Travel Dates:<?php echo $_POST["travelDates"];?><br>
-   
+<?php
+echo $destination;
+?>
 
 <?php
 echo "An agent will be in touch with you soon!";
