@@ -37,7 +37,19 @@ Destination:<?php echo $_POST["destination"];?><br>
 
 <h1>An agent will be in touch with you soon!</h1>
 
+CREATE DATABASE VACATION;
 
+CREATE TABLE `vacation_details` (
+ `First_Name` varchar(20) NOT NULL,
+ `Last_Name` varchar(20) NOT NULL,
+ `Phone_Number` varchar(50) NOT NULL,
+ `Email` varchar(50) NOT NULL,
+ `Number_Adults` int(11) NOT NULL,
+ `Number_Children` int(11) NOT NULL,
+ `Travel_Dates` date NOT NULL,
+ `Destination` varchar(50) NOT NULL,
+ `Activities` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
    <p>MEGA TRAVELS</p>
