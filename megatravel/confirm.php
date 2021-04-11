@@ -36,20 +36,18 @@ Travel Dates:<?php echo $_POST["travelDates"];?><br>
 Destination:<?php echo $_POST["destination"];?><br>
 
 <h1>An agent will be in touch with you soon!</h1>
+//connecting to database
+<?php
+$conn = mysqli_connect('localhost', 'gavin', 'password1234', 'megatravel');
 
-CREATE DATABASE VACATION;
+//check connection
+if (!$conn){
+  echo 'Connection Error: ' .mysqli_connect_error();
+}
 
-CREATE TABLE `vacation_details` (
- `First_Name` varchar(20) NOT NULL,
- `Last_Name` varchar(20) NOT NULL,
- `Phone_Number` varchar(50) NOT NULL,
- `Email` varchar(50) NOT NULL,
- `Number_Adults` int(11) NOT NULL,
- `Number_Children` int(11) NOT NULL,
- `Travel_Dates` date NOT NULL,
- `Destination` varchar(50) NOT NULL,
- `Activities` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+CREATE TABLE `megatravel`.`vacation_details` ( `first_name` VARCHAR(255) NOT NULL AUTO_INCREMENT , `last_name` VARCHAR(255) NOT NULL ,
+ `email` VARCHAR(255) NOT NULL , `phonenumber` VARCHAR(255) NOT NULL , `number_adults` INT(11) NOT NULL ,
+  `number_children` INT(11) NOT NULL , `travel_dates` DATE NOT NULL , PRIMARY KEY (`first_name`)) ENGINE = InnoDB;
 <footer>
    <p>Copyright Protected All rights reserved</p><br/>
    <p>MEGA TRAVELS</p>
