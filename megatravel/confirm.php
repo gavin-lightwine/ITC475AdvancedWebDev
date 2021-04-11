@@ -44,7 +44,8 @@ $conn = mysqli_connect('localhost', 'gavin', 'password1234', 'megatravel');
 if (!$conn){
   echo 'Connection Error: ' .mysqli_connect_error();
 }
-
+?>
+<?php
 CREATE TABLE `megatravel`.`vacation_details` ( `first_name` VARCHAR(255) NOT NULL AUTO_INCREMENT , `last_name` VARCHAR(255) NOT NULL ,
  `email` VARCHAR(255) NOT NULL , `phonenumber` VARCHAR(255) NOT NULL , `number_adults` INT(11) NOT NULL ,
   `number_children` INT(11) NOT NULL , `travel_dates` DATE NOT NULL , PRIMARY KEY (`first_name`)) ENGINE = InnoDB;
