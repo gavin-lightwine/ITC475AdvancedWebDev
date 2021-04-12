@@ -25,7 +25,14 @@
        <li><a href= "contact.html">Contact Agent</a></li>
       </ul>
      </nav>
+<?php
 
+$host = 'localhost:3306';
+$user = 'gavin';
+$password = "";
+
+
+$conn = mysqli_connect($host,$user,$password);
 
      <footer>
    <p>Copyright Protected All rights reserved</p><br/>

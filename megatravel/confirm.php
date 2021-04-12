@@ -39,13 +39,13 @@ Destination:<?php echo $_POST["destination"];?><br>
 //connecting to database
 <?php
 
-$host = 'localhost';
+$host = 'localhost:3306';
 $user = 'gavin';
 $password = "";
 
 
 $conn = mysqli_connect($host,$user,$password);
-//check connection
+
 if (!$conn)
 {
    echo 'Connection failed<br>';
@@ -54,7 +54,7 @@ if (!$conn)
    die();
 }
 
-echo 'Successfully connected!<br>';
+echo 'Data Submitted!<br>';
 ?>
 
 <footer>
