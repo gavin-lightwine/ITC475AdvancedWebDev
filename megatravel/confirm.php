@@ -46,7 +46,7 @@ $password = "";
 
 $conn = mysqli_connect($host,$user,$password);
 //check connection
-if (!$mysqli)
+if (!$conn)
 {
    echo 'Connection failed<br>';
    echo 'Error number: ' . mysqli_connect_error() . '<br>';
