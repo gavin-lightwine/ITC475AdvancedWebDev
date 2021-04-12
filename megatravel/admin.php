@@ -32,7 +32,7 @@ $user = 'gavin';
 $password = "";
 
 
-$conn = mysqli_connect($host,$user,$password);
+$conn = mysqli_connect($host,$user,$password);?>
 
      <footer>
    <p>Copyright Protected All rights reserved</p><br/>
