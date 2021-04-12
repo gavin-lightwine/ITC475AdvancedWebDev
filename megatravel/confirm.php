@@ -43,7 +43,7 @@ $host = 'localhost';
 $user = 'gavin';
 $passwd = 'password1234';
 $schema = 'vacation_details';
-$mysqli = mysqli_connect($localhost, $gavin, $password1234, $vacation_details;
+$mysqli = mysqli_connect($localhost, $gavin, $password1234, $vacation_details);
 //check connection
 if (!$mysqli)
 {
