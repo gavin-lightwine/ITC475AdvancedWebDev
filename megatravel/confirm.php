@@ -41,9 +41,10 @@ Destination:<?php echo $_POST["destination"];?><br>
 
 $host = 'localhost';
 $user = 'gavin';
-$passwd = 'password1234';
+$password = "";
 $schema = 'vacation_details';
-$mysqli = mysqli_connect($localhost, $gavin, $password1234, $vacation_details);
+
+$conn = mysqli_connect($host,$user,$password,$schema);
 //check connection
 if (!$mysqli)
 {
