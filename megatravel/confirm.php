@@ -54,7 +54,7 @@ if (!$conn)
    die();
 }
 
-mysql_select_db('megatravel');
+mysqli_select_db('megatravel');
 
        
 $FirstName = $_POST['FirstName'];
@@ -62,7 +62,6 @@ $LastName = $_POST['LastName'];
 $Email = $_POST['email'];
 $NoOfAdults = $_POST['noOfAdults'];
 $NoOfChild = $_POST['noOfChild'];
-$Destination = $_POST['desination'];
 $TravelDates = $_POST['travelDates'];
 $Destination = $_POST['Destination'];
 
