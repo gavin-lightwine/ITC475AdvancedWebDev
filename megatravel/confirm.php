@@ -49,7 +49,7 @@ $conn = mysqli_connect($host,$user,$password);
 if (!$mysqli)
 {
    echo 'Connection failed<br>';
-   echo 'Error number: ' . mysqli_connect_errno() . '<br>';
+   echo 'Error number: ' . mysqli_connect_error() . '<br>';
    echo 'Error message: ' . mysqli_connect_error() . '<br>';
    die();
 }
