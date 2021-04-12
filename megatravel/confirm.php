@@ -38,12 +38,22 @@ Destination:<?php echo $_POST["destination"];?><br>
 <h1>An agent will be in touch with you soon!</h1>
 //connecting to database
 <?php
-$conn = mysqli_connect('localhost', 'gavin', 'password1234', 'megatravel');
 
+$host = 'localhost';
+$user = 'gavin';
+$passwd = 'password1234';
+$schema = 'vacation_details';
+$mysqli = mysqli_connect($localhost, $gavin, $password1234, $vacation_details;
 //check connection
-if (!$conn){
-  echo 'Connection Error: ' .mysqli_connect_error();
+if (!$mysqli)
+{
+   echo 'Connection failed<br>';
+   echo 'Error number: ' . mysqli_connect_errno() . '<br>';
+   echo 'Error message: ' . mysqli_connect_error() . '<br>';
+   die();
 }
+
+echo 'Successfully connected!<br>';
 ?>
 
 <footer>
