@@ -66,7 +66,7 @@ if (!$conn)
    die();
 }
 
-$sql = "insert into vacation_details(FirstName,LastName, phoneNo, Email,NoOfAdults,noOfChildren, travelDates ) values('$FirstName','$LastName','$phoneNo','$email',
+$sql = "insert into vacation_details(FirstName, LastName, phoneNo, Email, NoOfAdults, noOfChildren, travelDates ) values('$FirstName','$LastName','$phoneNo','$email',
 '$NoOfAdults','$NoOfChildren','$travelDates')";
 
 if ($conn->query($sql) === TRUE) {

@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {
     echo "Client Phone Number:  "; echo $row["phoneNo"]; echo "<br>";
     echo "Client Email:  "; echo $row["email"]; echo "<br>";
     echo "Number of Adults:  "; echo $row["NoOfAdults"]; echo "<br>";
-    echo "Number of Children:  ";echo $row["noOfChildren"]; echo "<br>";
+    echo "Number of Children:  ";echo $row["NoOfChildren"]; echo "<br>";
     echo "Travel Dates:  "; echo $row["travelDates"]; echo "<br>";
     
   }
