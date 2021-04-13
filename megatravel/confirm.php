@@ -42,6 +42,14 @@ Destination:<?php echo $_POST["destination"];?><br>
 $host = 'localhost:3306';
 $user = 'gavin';
 $password = "";
+$FirstName = $_POST['FirstName'];
+$LastName = $_POST['LastName'];
+$Email = $_POST['email'];
+$NoOfAdults = $_POST['noOfAdults'];
+$NoOfChild = $_POST['noOfChild'];
+$TravelDates = $_POST['travelDates'];
+$Destination = $_POST['Destination'];
+
 
 
 $conn = mysqli_connect($host,$user,$password);
@@ -54,21 +62,24 @@ if (!$conn)
    die();
 }
 
-mysqli_select_db('megatravel');
+else {
+  $stmt = $conn->prepare("insert into vacation_details(firstName, LastName, email, noOfAdults , noOfChild , travelDates) values(?, ?, ?, ?, ?, ?)");
+  $stmt->bind_param("sssssi", $firstName, $lastName, $email, $NoOfAdults, $NoOfChild, $TravelDates);
+  $execval = $stmt->execute();
+  echo $execval;
+  echo "successfully...";
+  $stmt->close();
+  $conn->close();
+}
+?>
+
+
 
        
-$FirstName = $_POST['FirstName'];
-$LastName = $_POST['LastName'];
-$Email = $_POST['email'];
-$NoOfAdults = $_POST['noOfAdults'];
-$NoOfChild = $_POST['noOfChild'];
-$TravelDates = $_POST['travelDates'];
-$Destination = $_POST['Destination'];
 
 
-$sql = "CREATE TABLE vacation_details ( `first_name` VARCHAR(255) NOT NULL , `last_name` VARCHAR(255) NOT NULL ,
-`email` VARCHAR(255) NOT NULL , `phonenumber` VARCHAR(255) NOT NULL , `number_adults` INT(11) NOT NULL ,
- `number_children` INT(11) NOT NULL , `travel_dates` DATE NOT NULL )";
+
+
 ?>
 
 <footer>
