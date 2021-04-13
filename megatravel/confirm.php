@@ -29,7 +29,7 @@
 First Name: <?php echo $_POST["FirstName"]; ?><br>
 Last Name:  <?php echo $_POST["LastName"]; ?><br>
 Phone Number: <?php echo $_POST["phoneNo"]; ?><br>
-Email: <?php echo $_POST["Email"]; ?><br>
+Email: <?php echo $_POST["email"]; ?><br>
 Number of Adults: <?php echo $_POST["noOfAdults"]; ?><br>
 Number of Children: <?php echo $_POST["noOfChildren"]; ?><br>
 Travel Dates:<?php echo $_POST["travelDates"];?><br>
@@ -41,7 +41,7 @@ Destination:<?php echo $_POST["destination"];?><br>
 $FirstName = $_POST['FirstName'];
 $LastName = $_POST['LastName'];
 $phoneNo = $_POST['phoneNo'];
-$Email = $_POST['Email'];
+$email = $_POST['email'];
 $NoOfAdults = $_POST['noOfAdults'];
 $NoOfChildren = $_POST['noOfChildren'];
 $travelDates = $_POST['travelDates'];
@@ -66,11 +66,11 @@ if (!$conn)
    die();
 }
 
-$sql = "insert into vacation_details(FirstName,LastName, phoneNo, Email,NoOfAdults,noOfChildren, travelDates ) values('$FirstName','$LastName','$phoneNo','$Email',
+$sql = "insert into vacation_details(FirstName,LastName, phoneNo, Email,NoOfAdults,noOfChildren, travelDates ) values('$FirstName','$LastName','$phoneNo','$email',
 '$NoOfAdults','$NoOfChildren','$travelDates')";
 
 if ($conn->query($sql) === TRUE) {
-	echo "ADDED: ".$FirstName.", ".$LastName.", ".$phoneNo.",".$Email.",".$NoOfAdults.",".$NoOfChildren.",".$travelDates;
+	echo "ADDED: ".$FirstName.", ".$LastName.", ".$phoneNo.",".$email.",".$NoOfAdults.",".$NoOfChildren.",".$travelDates;
 } else {
 	echo "Error: ".$sql."<br>".$conn->error;
 }
