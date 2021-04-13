@@ -70,7 +70,7 @@ $sql = "insert into vacation_details(FirstName,LastName, phoneNo, Email,NoOfAdul
 '$NoOfAdults','$NoOfChildren','$travelDates')";
 
 if ($conn->query($sql) === TRUE) {
-	echo "ADDED: ".$FirstName.", ".$last_name.", ".$phoneNo.",".$email.",".$NoOfAdults.",".$NoOfChildren.",".$travelDates;
+	echo "ADDED: ".$FirstName.", ".$LastName.", ".$phoneNo.",".$email.",".$NoOfAdults.",".$NoOfChildren.",".$travelDates;
 } else {
 	echo "Error: ".$sql."<br>".$conn->error;
 }
