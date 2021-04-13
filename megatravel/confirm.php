@@ -63,8 +63,8 @@ if (!$conn)
 }
 
 else {
-  $stmt = $conn->prepare("insert into vacation_details(firstName, LastName, email, noOfAdults , noOfChild , travelDates) values(?, ?, ?, ?, ?, ?)");
-  $stmt->bind_param("sssssi", $firstName, $lastName, $email, $NoOfAdults, $NoOfChild, $TravelDates);
+  $stmt = $conn->prepare("insert into vacation_details(firstName, LastName, email, noOfAdults , noOfChild , travelDates) values(?, ?, ?, ?, ?, ?, ?)");
+  $stmt->bind_param("sssssi", $firstName, $lastName, $email, $NoOfAdults, $NoOfChild, $TravelDates, $Destination);
   $execval = $stmt->execute();
   echo $execval;
   echo "successfully...";
