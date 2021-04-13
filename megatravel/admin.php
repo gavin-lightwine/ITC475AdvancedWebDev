@@ -52,13 +52,13 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "Client First Name:" . $row["FirstName"]. echo "<br>";
-    echo "Client Last Name:" . $row["LastName"]. echo "<br>";
-    echo "Client Phone Number:" . $row["phoneNo"]. echo "<br>";
-    echo "Client Email:" . $row["email"]. echo "<br>";
-    echo "Numbere of Adults:" . $row["NoOfAdults"]. echo "<br>";
-    echo "Number of Children" . $row["noOfChildren"]. echo "<br>";
-    echo "Travel Dates" . $row["travelDates"]. echo "<br>";
+    echo "Client First Name:";  $row["FirstName"]; echo "<br>";
+    echo "Client Last Name:";  $row["LastName"]; echo "<br>";
+    echo "Client Phone Number:";  $row["phoneNo"]; echo "<br>";
+    echo "Client Email:";  $row["email"]; echo "<br>";
+    echo "Numbere of Adults:";  $row["NoOfAdults"]; echo "<br>";
+    echo "Number of Children"; $row["noOfChildren"]; echo "<br>";
+    echo "Travel Dates"; $row["travelDates"]; echo "<br>";
     
   }
 } else {
