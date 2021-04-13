@@ -38,14 +38,25 @@ Destination:<?php echo $_POST["destination"];?><br>
 <h1>An agent will be in touch with you soon!</h1>
 //connecting to database
 <?php
+$FirstName = $_POST['FirstName'];
+$LastName = $_POST['LastName'];
+$phoneNo = $_POST['phoneNo'];
+$Email = $_POST['Email'];
+$NoOfAdults = $_POST['noOfAdults'];
+$NoOfChildren = $_POST['noOfChildren'];
+$travelDates = $_POST['travelDates'];
+
+
+
+
 
 $host = 'localhost:3306';
 $user = 'gavin';
 $password = "";
+$db = 'megatravel';
 
 
-
-$conn = mysqli_connect($host,$user,$password);
+$conn =  new mysqli($host,$user,$password, $db);
 
 if (!$conn)
 {
@@ -55,7 +66,16 @@ if (!$conn)
    die();
 }
 
+$sql = "insert into vacation_details(FirstName,LastName, phoneNo, Email,NoOfAdults,noOfChildren, travelDates ) values('$FirstName','$LastName','$phoneNo','$Email',
+'$NoOfAdults','$NoOfChildren','$travelDates')";
 
+if ($conn->query($sql) === TRUE) {
+	echo "ADDED: ".$FirstName.", ".$LastName.", ".$phoneNo.",".$Email.",".$NoOfAdults.",".$NoOfChildren.",".$travelDates;
+} else {
+	echo "Error: ".$sql."<br>".$conn->error;
+}
+
+$conn->close();
 
 
        
