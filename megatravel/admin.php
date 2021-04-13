@@ -50,15 +50,15 @@ $sql = "SELECT * FROM `vacation_details`";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
+  
   while($row = $result->fetch_assoc()) {
-    echo "Client First Name:";  $row["FirstName"]; echo "<br>";
-    echo "Client Last Name:";  $row["LastName"]; echo "<br>";
-    echo "Client Phone Number:";  $row["phoneNo"]; echo "<br>";
-    echo "Client Email:";  $row["email"]; echo "<br>";
-    echo "Number of Adults:";  $row["NoOfAdults"]; echo "<br>";
-    echo "Number of Children:"; $row["noOfChildren"]; echo "<br>";
-    echo "Travel Dates"; $row["travelDates"]; echo "<br>";
+    echo "Client First Name:"; echo  $row["FirstName"]; echo "<br>";
+    echo "Client Last Name:"; echo $row["LastName"]; echo "<br>";
+    echo "Client Phone Number:"; echo $row["phoneNo"]; echo "<br>";
+    echo "Client Email:"; echo $row["email"]; echo "<br>";
+    echo "Number of Adults:"; echo $row["NoOfAdults"]; echo "<br>";
+    echo "Number of Children:";echo $row["noOfChildren"]; echo "<br>";
+    echo "Travel Dates"; echo $row["travelDates"]; echo "<br>";
     
   }
 } else {
