@@ -42,13 +42,6 @@ Destination:<?php echo $_POST["destination"];?><br>
 $host = 'localhost:3306';
 $user = 'gavin';
 $password = "";
-$FirstName = $_POST['FirstName'];
-$LastName = $_POST['LastName'];
-$Email = $_POST['email'];
-$NoOfAdults = $_POST['noOfAdults'];
-$NoOfChild = $_POST['noOfChild'];
-$TravelDates = $_POST['travelDates'];
-$Destination = $_POST['Destination'];
 
 
 
@@ -62,16 +55,6 @@ if (!$conn)
    die();
 }
 
-else {
-  $stmt = $conn->prepare("insert into vacation_details(firstName, LastName, email, noOfAdults , noOfChild , travelDates) values(?, ?, ?, ?, ?, ?, ?)");
-  $stmt->bind_param("sssssi", $firstName, $lastName, $email, $NoOfAdults, $NoOfChild, $TravelDates, $Destination);
-  $execval = $stmt->execute();
-  echo $execval;
-  echo "successfully...";
-  $stmt->close();
-  $conn->close();
-}
-?>
 
 
 
