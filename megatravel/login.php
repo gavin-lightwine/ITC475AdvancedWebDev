@@ -27,6 +27,8 @@
       </ul>
      </nav>
 <body>
+    <h1>LOGIN</h1>
+    <br>
 <p>
     <label>Username:</label>
     <input type="text" id="user" name:"user" />
