@@ -29,7 +29,7 @@
 <body>
     <h1>User Login</h1>
     <br>
-<form action = "admin.php" method="post">
+<form action = "admin.php" method="post" id="formlogin">
     <label>Username:</label>
     <input type="text" id="user" name:"user" />
 
@@ -40,9 +40,9 @@
     <input type="text" id="password" name:"password" />
 <br>
 
-
+<br/>
 <button type="submit">Submit</button>
-<button type="reset" form="admin.php" value="Reset">Reset</button>
+<button type="reset" form="formlogin" value="Reset">Reset</button>
 <br>
 
 
