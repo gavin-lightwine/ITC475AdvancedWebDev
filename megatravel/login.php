@@ -29,22 +29,23 @@
 <body>
     <h1>User Login</h1>
     <br>
-<p>
+<form action = "admin.php" method="post">
     <label>Username:</label>
     <input type="text" id="user" name:"user" />
-</p>
+
 <br>
-<p>
+
     <label>Password:</label>
-    <input type="text" id="password" name:"password"/>
-</p>
+    <input type="text" id="password" name:"password" />
+<br>
 
 
 <button type="submit">Submit</button>
+<button type="reset" form="admin.php" value="Reset">Reset</button>
 <br>
 
 
-
+</form>
 </body>
      <footer>
    <p>Copyright Protected All rights reserved</p><br/>
