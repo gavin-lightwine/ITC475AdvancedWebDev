@@ -27,7 +27,7 @@
       </ul>
      </nav>
 <body>
-    <h1>User Login</h1>
+    <h1>Admin Login</h1>
     <br>
 <form action = "admin.php" method="post" id="formlogin">
     <label>Username:</label>
