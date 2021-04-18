@@ -27,7 +27,7 @@
       </ul>
      </nav>
 <body>
-    <h1>LOGIN</h1>
+    <h1>User Login</h1>
     <br>
 <p>
     <label>Username:</label>
@@ -38,6 +38,9 @@
     <label>Password:</label>
     <input type="text" id="password" name:"password"/>
 </p>
+
+
+<button type="submit">Submit</button>
 <br>
 
 
