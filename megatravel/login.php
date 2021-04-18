@@ -30,6 +30,13 @@
 <p>
     <label>Username:</label>
     <input type="text" id="user" name:"user" />
+</p>
+<br>
+<p>
+    <label>Password:</label>
+    <input type="text" id="password" name:"password"/>
+</p>
+<br>
 
 
 
