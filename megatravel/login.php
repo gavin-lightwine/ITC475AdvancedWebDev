@@ -1,3 +1,15 @@
+<?php
+$host = 'localhost:3306';
+$user = 'gavin';
+$password = "";
+$db = 'megatravel';
+
+
+
+
+
+?>
+
 
 <!DOCTYPE html>
 
