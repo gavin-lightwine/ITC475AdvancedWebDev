@@ -4,7 +4,7 @@ $user = 'gavin';
 $password = "";
 $db = 'megatravel';
 
-mysql_connect($host,$user,$password);
+mysqli_connect($host,$user,$password);
 mysql_select_db($db);
 
 
