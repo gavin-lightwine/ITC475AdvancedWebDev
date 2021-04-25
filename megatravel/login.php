@@ -15,7 +15,7 @@ if(isset($_POST['username'])){
   
   $sql="select * from login where user='".$username."'AND password='".$password."' limit 1";
   
-  $result=mysql_query($sql);
+  $result=mysqli_query($sql);
   
   if(mysql_num_rows($result)==1){
       echo " You Have Successfully Logged in";
