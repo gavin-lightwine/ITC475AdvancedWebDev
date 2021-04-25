@@ -5,30 +5,31 @@ $password = "";
 $db = 'megatravel';
 
 $conn = new mysqli($host,$user,$password,$db);
- if ($conn->connect_error) die($conn->connect_error);
+ if ($conn->connect_error) die("Connection died" . $conn->connect_error);
 
+ if($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+  $myusername = mysqli_real_escape_string($db,$_POST['username']);
+  $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+  
+  $sql = "SELECT id FROM login WHERE username = '$username' and passcode = '$password'";
+  $result = mysqli_query($db,$sql);
+  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+  $active = $row['active'];
+  
+  $count = mysqli_num_rows($result);
+  
 
-if(isset($_POST['username'])){
-
-  $username=$_POST['username'];
-  $password=$_POST['password'];
-  
-  $sql="select * from login where user='".$username."'AND password='".$password."' limit 1";
-  
-  $result=mysqli_query($sql);
-  
-  if(mysql_num_rows($result)==1){
-      echo " You Have Successfully Logged in";
-      exit();
+  if($count == 1) {
+     session_register("username");
+     $_SESSION['login_user'] = $username;
+     
+     header("location: welcome.php");
+  }else {
+     $error = "Your Login Name or Password is invalid";
   }
-  else{
-      echo " You Have Entered Incorrect Password";
-      exit();
-  }
-
 }
-
-
+?>
 
 ?>
 
