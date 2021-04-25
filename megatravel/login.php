@@ -4,7 +4,9 @@ $user = 'gavin';
 $password = "";
 $db = 'megatravel';
 
-$conn =  new mysqli($host,$user,$password, $db);
+mysql_connect($host,$user,$password);
+mysql_select_db($db);
+
 
 if(isset($_POST['username'])){
 
