@@ -10,7 +10,7 @@ $conn = new mysqli($host,$user,$password,$db);
 
 if(isset($_POST['username'])){
 
-  $uname=$_POST['username'];
+  $username=$_POST['username'];
   $password=$_POST['password'];
   
   $sql="select * from login where user='".$username."'AND password='".$password."' limit 1";
