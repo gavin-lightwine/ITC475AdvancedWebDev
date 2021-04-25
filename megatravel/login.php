@@ -4,8 +4,8 @@ $user = 'gavin';
 $password = "";
 $db = 'megatravel';
 
-mysqli_connect($host,$user,$password);
-mysqli_select_db($db);
+mysqli_connect($host,$user,$password,$db);
+
 
 
 if(isset($_POST['username'])){
