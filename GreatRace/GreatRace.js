@@ -17,7 +17,7 @@
 	function endrace() {
 	  console.log("The Winner is: "+ winner);
 	  
-	  stoplight.src = "Resources/Images/TrafficLightRed.svg";
+	  stoplight.src = "Images/TrafficLightRed.svg";
 	  stoplightlink.onclick = reset;
 		
 		if (winner == 1){
@@ -52,7 +52,7 @@
 	    
 	    console.log("Beginning race");
 	    
-	    stoplight.src="Resources/Images/TrafficLightGreen.svg";
+	    stoplight.src="Images/TrafficLightGreen.svg";
 		  
 	
 
