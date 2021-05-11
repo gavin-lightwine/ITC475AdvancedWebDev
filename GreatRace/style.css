@@ -2,7 +2,7 @@
 	
 
 	html { 
-	background: url(Resources/Images/CatImage.jpg);
+	background: url(Images/CatImage.jpg);
 	}
 	
 
@@ -39,7 +39,7 @@
 
 	#winnertext {
 	  color: white;
-	  font-size 300%;
+	  font-size: 300%;
 	  font-weight: bold;
 	  position: relative;
 	  top: 100pt;
